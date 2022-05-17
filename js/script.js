@@ -1,5 +1,5 @@
 const pessoas = [];
-let input = document.getElementById("enterInput");
+var input = document.getElementById("enterInput");
 let lista = document.getElementById("lista");
 
 function addPessoa() {
@@ -12,7 +12,7 @@ function addPessoa() {
         pessoas.push(pessoa)
     
         input.value = ""
-
+    
         mostraLista();
         
     }
@@ -20,27 +20,31 @@ function addPessoa() {
 }
 
 function mostraLista() {
-
+        
         lista.innerHTML = " "
-        for (pessoa of pessoas) {
+        for (index of pessoas) {
         //criar item em um botao que esclui o nome da lista
         //nomme
-        
         let item = document.createElement("li");
         item.setAttribute("class", "list-item")
-        item.appendChild(document.createTextNode(pessoa))
+        item.appendChild(document.createTextNode(index))
+        
         lista.appendChild(item);
         //botao de delete
+    
         let btnDel = document.createElement("button");
-        btnDel.setAttribute("class", "del-btn");
+        btnDel.setAttribute("onclick", `deletaNome(${input})`);
         btnDel.appendChild(document.createTextNode("x"));
         item.appendChild(btnDel);
+        
+            
         }
 
 }
 
-function deletaNome () {
+function deletaNome (pos) {
 
+    pessoas.splice(pos, 0)
 }
 
 function sortear () {
