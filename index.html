@@ -1,0 +1,37 @@
+<!-- Programa que vai : 
+1 - permitir a entrada de nomes pelo usuario
+2 - cada usuario inserido deve ser adicionado em uma lista
+3 - conforme os nomes são adicoinados serão mostrados em uma lista
+5 - Ao terminar de por os nomes, um botão mostra qual usuario foi sorteado -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estyle.css">
+    <title>Prize Draw</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="div-input">
+                Insira um nome: <input id="enterInput" type="text"> 
+                <button onclick="addPessoa()">Adicionar</button>
+                <button onclick="sortear()">Sortear</button>
+            </div>
+
+            <div class="div-list">
+                <ul class="lista" id="lista">
+                   
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

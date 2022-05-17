@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: grey;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid magenta;
+    position: relative;
+}
+
+.container {
+    width: 50%;
+    height: 200px;
+    border: 1px solid magenta;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.div-list{
+    border: 1px solid maroon;
+    float: left;
+    
+}
+
+.list-item{
+    list-style: none;
+}
+
+
+
+
