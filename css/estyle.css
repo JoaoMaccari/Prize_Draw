@@ -24,16 +24,30 @@ body{
     transform: translate(-50%, -50%);
     
 }
-.div-list{
-    border: 1px solid maroon;
-    float: left;
+.lista{
     
+    border: 1px solid maroon;
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    float: left;
 }
+
+
 
 .list-item{
     list-style: none;
+    width: 100%;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid magenta;
 }
 
 
-
-
+#del-btn{
+    background-color: red;
+    float: right;
+   
+    
+}
