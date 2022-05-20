@@ -58,14 +58,12 @@ function sortear () {
     //sortear um dos nomes cadastrados
     let sorteados = pessoas.length
     var ale = Math.floor(Math.random(pessoas) * sorteados);
-    for (i in pessoas) {
+   
         
         var sortudo = pessoas[ale]
-        
+        console.log()
         divSorteado.innerHTML = `<p>O sorteado foi ${sortudo}<p>`
         
-    }
-
     
 
 }
